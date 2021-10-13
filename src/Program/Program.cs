@@ -18,6 +18,7 @@ namespace Full_GRASP_And_SOLID
             PopulateCatalogs(catalog);
 
             Recipe recipe = new Recipe();
+
             recipe.FinalProduct = catalog.GetProduct("Café con leche");
             recipe.AddStep(catalog.GetProduct("Café"), 100, catalog.GetEquipment("Cafetera"), 120);
             recipe.AddStep(catalog.GetProduct("Leche"), 200, catalog.GetEquipment("Hervidor"), 60);
